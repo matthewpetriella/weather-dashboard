@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css"/>
+    <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="app-title">Weather Dashboard</h1>
+    </header>
+<!--Search form by City-->
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+            <h3>Search for a City:</h3>
+            <form id="city-form">
+                <input name="city" id="city" type="text" autofocus="true" class="form-input" placeholder="Flint"/>
+                <button type="submit" class="btn">Search
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+<!--History by City-->
+        <div class="history"></div>
+    </main>
+<!--Weather detail by City-->
+    <div class="col-two-container">
+        <div class="detail">
+            <div class="row">
+                <h1 class="cityName">City Name</h1>
+                <h1 class="today"></h1>
+                <img class="weatherIcon">
+            </div>
+        </div class="row">
+            <p class="temp">Temp:</p>
+        </div>
+        <div class="row">
+            <p class="wind">Wind:</p>
+        </div>
+        <div class="row">
+            <p class="humidity">Humidity:</p>
+        </div>
+        <div class="row">
+            <p class="UV">UV Index:</p>
+        </div>
+    </div>
+<!--5 day forecast by city-->
+    <div class="five-day-container">
+        <h1> 5-Day Forecast:</h1>
+        <div class="card-row">
+
+        </div>
+    </div>
+    
+</body>
+
+</html>
